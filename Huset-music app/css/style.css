@@ -1,0 +1,568 @@
+@font-face {
+    font-family: Avenir-Regular;
+    src: url("font/AvenirNext-Regular-08.ttf");
+}
+
+@font-face {
+    font-family: Avenir-bold;
+    src: url("font/AvenirNext-DemiBold-03.ttf");
+}
+
+* {
+    transition: 0.5s ease-in;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Avenir-Regular', sans-serif;
+    background-color:#fff!important;
+    color:#262424;
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Avenir-bold', sans-serif;
+}
+
+header {
+    height: 120px;
+    background-color: transparent;
+    z-index: 9999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.avatar{
+    position: relative;
+    top: 10px;
+    float: right;
+    padding: 1em;
+    
+}
+.profile{
+    position: relative;
+    top: 120px;
+    height: 150px;
+    padding: 1em;
+}
+.name{
+    text-align: right;
+    padding: 0.5em;
+}
+.headerMobileOpen {
+    height: 100vh;
+    background: #262F36;
+}
+
+.headerContent {
+    padding: 2.2em;
+    position: sticky;
+}
+
+.lang {
+    cursor: pointer;
+    float: right;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+a{
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+
+.nav-bar a {
+    color: #fff;
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+a:hover {
+    color: #D8002E;
+}
+
+.scrolled {
+    position: fixed;
+    background-color: #fff;
+    -webkit-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.05);
+    box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.05);
+}
+
+/*FRONTPAGE*/
+
+.openSection {
+    height: 100vh;
+}
+.halfSection{
+    height: 30vh;
+}
+
+.logo {
+    position: absolute;
+    width: 50%;
+}
+.open-btn{
+    position: relative;
+}
+.close-btn{
+    position: relative;
+}
+.husetlogo{
+    height: 70%;
+}
+
+.mobilelogo {
+    display: none;
+}
+
+.calendar{
+
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90vw;
+}
+
+.logoContainer {
+    position: absolute;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+}
+
+.title h1 {
+    font-size: 6em;
+}
+.downarrow{
+    position: relative;
+    top: 160px;
+    transform: rotate(90deg);
+}
+.downarrow img{
+    height: 50px;
+}
+.allimage img{
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+    opacity: .7;
+}
+.openImage img {
+    opacity: .8;
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+    -webkit-clip-path: polygon(88% 0, 100% 0, 100% 100%, 69% 100%);
+    clip-path: polygon(69% 0, 100% 0, 100% 100%, 50% 100%);
+}
+.bandtitle{
+    text-align: center;
+    position: relative;
+    bottom: 180px;
+    color: white;
+    text-shadow: 5px 5px 19px black;
+}
+.eventName{
+    padding-top: 120px;
+    letter-spacing: 5px;
+    height: 50px;
+   text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 5px 5px 19px black;
+}
+.BandEvent{
+    padding: 1em;
+}
+.bandImage{
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  .bandBanner{
+      text-align: center;
+      padding: 2em;
+  }
+  .spotify{
+    box-shadow: 10px 10px 50px 0px rgb(0, 0, 0);
+  }
+  
+.eventTitle {
+    height: 50px;
+    padding: 1em;
+}
+.workin{
+    text-align: center;
+    padding-top: 100px;
+    font-size: 1.5em;
+}
+
+.bandName{
+text-align: center;
+position: absolute;
+left: 40%;
+top: 80px;
+color:#fff;
+text-shadow: 20px 12px 12px black;
+}
+.buy{
+    cursor: pointer;
+    font-weight: 700;
+    color: #D8002E;
+    float: right;
+}
+.buyticket{
+text-align: right;
+color: #D8002E;
+
+}
+
+.event {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    grid-gap: 40px;
+}
+.filter{
+    position: relative;
+    top: -35px;
+    float: right;
+    height: 20px;
+    padding: .5em;
+}
+.paragraph{
+    text-align: justify;
+    padding-left: 300px;
+    padding-right: 300px;
+    line-height: 25px;
+}
+.paragraph a{
+    color:  #D8002E;
+    text-decoration: none;
+}
+
+
+.burger-bar {
+    padding: 1.5em;
+    font-size: 2em;
+}
+
+.overlay {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.overlay li {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.overlay a {
+    color: black;
+    text-decoration: none;
+}
+
+
+
+.hide {
+    display: none !important;
+}
+
+.eventcard {
+    margin: 2em;
+    background-color: #fff;
+    position: relative;
+    height: 280px;
+    border-radius: 10px;
+    -webkit-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.05);
+    box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.05);
+}
+.eventcard p, h3{
+    color: #262424;
+}
+.Eventdescription{
+    padding: 1.5em;
+}
+
+
+
+.bookmark {
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    cursor: pointer;
+    opacity: .5;
+}
+
+.bookmark:hover {
+    opacity: 1;
+}
+
+
+
+.eventcard:hover {
+    -webkit-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.15);
+}
+
+.eventImage {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.articlecontent {
+    margin: 25px;
+}
+
+.articlecontent p {
+    opacity: .5;
+    font-size: 1em;
+}
+
+.articlecontent h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.arrow {
+    display: none;
+    width: 50px;
+    cursor: pointer;
+    padding: 2.5em;
+    float: left;
+    z-index: 999;
+}
+.back{
+    display: none;
+    width: 40px;
+    cursor: pointer;
+    padding: 1.5em;
+    float: left;
+    z-index: 999;
+}
+
+.search {
+    cursor: pointer;
+    color: #262424;
+    padding: 2em;
+    font-size: 1.5em;
+    top: 80vh;
+    height: 50px;
+    z-index: 99;
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    border: none;
+    -webkit-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.05);
+    box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.05);
+}
+.signin{
+    cursor: pointer;
+    color: #262424;
+    padding: 1em;
+    font-size: 1em;
+    top: 90vh;
+    height: 50px;
+    z-index: 99;
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    border: none;
+    border-radius: 5px;
+    -webkit-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.05);
+    box-shadow: 10px 10px 19px rgba(0, 0, 0, 0.1);
+}
+
+.filterBy{
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+.genre{
+    text-align: center;
+    padding-top: 120px;
+}
+.allEvents{
+    top: 130px;
+    cursor: pointer;
+    color: #262424;
+    padding: 1em;
+    font-size: 1em;
+    z-index: 99;
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    width: 120px;
+    border: none;
+    border-radius: 5px;
+    -webkit-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.05);
+    box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.2);
+}
+.showresults{
+    cursor: pointer;
+    color: #262424;
+    padding: 1em;
+    font-size: 1em;
+   border: none;
+   border-radius: 5px;
+   position: relative;
+   left: 37%;
+   -webkit-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.05);
+   box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.2);
+  
+}
+footer{
+    padding: 2em;
+}
+
+
+/*///////////////////FILTER BUTTONS////////////////////*/
+
+.checkbox{
+    padding-top: 2em;
+    padding-left: 3em;
+}
+/* Customize the label (the container) */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+    border: 1px #262424;
+    border-radius: 2px;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: rgb(54, 26, 32);
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #D8002E;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+
+@media screen and (max-width: 772px) {
+
+    .arrow {
+        display: block;
+    }
+
+    .nav-bar {
+        display: none;
+    }
+
+    .openImage img {
+        height: 50vh;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    .search {
+        top: 85vh;
+        font-size: 1em;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .mobilelogo {
+        display: block;
+    }
+
+    .arrow {
+        display: block;
+    }
+
+    .event {
+        margin: 1.5em;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    }
+    .paragraph{
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+
+}
